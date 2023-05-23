@@ -29,8 +29,8 @@ https://github.com/Cyril26/simple_shell
 
 ### Compilation
 
-The ff flags were used to compile the code:
-     (hbtn) $ gcc -Wall -Werror -pedantic *.c -o hsh
+The following flags were used to compile the code:
+     $ gcc -Wall -Werror -pedantic *.c -o hsh
 
 ### Authors
 
