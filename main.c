@@ -27,7 +27,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 				write(STDOUT_FILENO, "\n", 1);
 			free(line);
 			exit(EXIT_SUCCESS);
-		}		
+		}
 
 		count = argsCount(line);
 		args = tokenize(line, count);
