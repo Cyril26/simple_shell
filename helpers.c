@@ -31,6 +31,7 @@ int _atoi(char *string)
 int _strlen(char *string)
 {
 	int count = 0;
+
 	while (string[count] != '\0')
 	{
 		count++;
@@ -48,6 +49,7 @@ char *_strdup(char *string)
 {
 	int length, i;
 	char *copy;
+
 	length = _strlen(string);
 
 	if (string == NULL)
@@ -101,9 +103,11 @@ char *_strconcat(char *string1, char *string2)
 {
 	int i, j = 0;
 
-	int totalLen = _strlen(string1) + _strlen(string2) + 2; /* +2 for '/' and '\0' */
+	int totalLen = _strlen(string1) + _strlen(string2) + 2;
+	/* +2 for '/' and '\0' */
 
 	char *result = malloc(sizeof(char) * totalLen);
+
 	if (result == NULL)
 		return (NULL);
 

@@ -51,6 +51,7 @@ int print_environment_variables(void)
 	while (environ[i] != NULL)
 	{
 		size_t len = _strlen(environ[i]);
+
 		write(STDOUT_FILENO, environ[i], len);
 		write(STDOUT_FILENO, "\n", 1);
 		i++;
