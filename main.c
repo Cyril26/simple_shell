@@ -9,10 +9,10 @@
 
 int main(__attribute__((unused)) int argc, char **argv)
 {
-	int count, loops;
-	int *line;
-	char **args;
 	size_t n = 0;
+	int count, loops;
+	char *line;
+	char **args;
 
 	signal(SIGINT, handle_sigint);
 	for (loops = 1; 1; loops++)
