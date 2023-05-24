@@ -14,7 +14,8 @@
 #include <stdbool.h>
 
 /**
- * struct builtin - It stores information about various built-in functions, including their names and corresponding function pointers.
+ * struct builtin - It stores information about various built-in functions,
+ * including their names and corresponding function pointers.
  * @name: This is a pointer to a character.
  * @func: This is a function pointer.
  */
