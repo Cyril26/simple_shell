@@ -74,6 +74,7 @@ char **tokenize(char *line, int size)
 	list_of_tokens[i] = token;
 
 	return (list_of_tokens);
+	free_memory(2, list_of_tokens);
 }
 
 /**

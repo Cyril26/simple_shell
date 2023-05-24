@@ -26,7 +26,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 			if (isatty(STDIN_FILENO))
 				write(STDOUT_FILENO, "\n", 1);
 			free(line);
-			exit(EXIT_FAILURE);
+			exit(EXIT_SUCCESS);
 		}		
 
 		count = argsCount(line);
