@@ -84,7 +84,10 @@ int search(char **args)
 	int count = argsCount(path);
 
 	if (path == NULL)
+	{
+		free(path);
 		return (-1);
+	}
 	if (count == -1)
 	{
 		free(path);
@@ -94,6 +97,7 @@ int search(char **args)
 	command = tokenize(path, count);
 	if (command == NULL)
 	{
+		free_memory(2, command);
 		free(path);
 		return (-1);
 	}
@@ -103,5 +107,6 @@ int search(char **args)
 		return (-1);
 	}
 	free(path);
+	free_memory(2, command);
 	return (0);
 }

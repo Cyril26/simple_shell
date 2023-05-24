@@ -71,10 +71,9 @@ char **tokenize(char *line, int size)
 		token = strtok(NULL, delim);
 		i++;
 	}
-	list_of_tokens[i] = token;
+	list_of_tokens[i] = NULL;
 
 	return (list_of_tokens);
-	free_memory(2, list_of_tokens);
 }
 
 /**
