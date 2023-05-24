@@ -21,7 +21,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 		args = NULL;
 		if (isatty(STDIN_FILENO))
 			write(STDOUT_FILENO, "$ ", 2);
-		if (getline(&line, &n, stdin) == -1)
+		if (getline(&line, &n, stdin) == EOF)
 		{
 			if (isatty(STDIN_FILENO))
 				write(STDOUT_FILENO, "\n", 1);
