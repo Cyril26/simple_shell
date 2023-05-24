@@ -65,6 +65,7 @@ char *_strdup(char *string)
 	}
 
 	return (copy);
+	free(copy);
 }
 
 /**
@@ -132,4 +133,5 @@ char *_strconcat(char *string1, char *string2)
 	result[j] = '\0';
 	free(string2);
 	return (result);
+	free(result);
 }
