@@ -26,9 +26,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 			if (isatty(STDIN_FILENO))
 				write(STDOUT_FILENO, "\n", 1);
 			exit(EXIT_FAILURE);
-		}
-		else
-			exit(EXIT_FAILURE);
+		}		
 
 		count = argsCount(line);
 		args = tokenize(line, count);
